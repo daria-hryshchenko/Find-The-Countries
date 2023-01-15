@@ -67,7 +67,7 @@ function oneCoutryCard(countries) {
 function countriesList(countries) {
   const foundList = countries
     .map(country => {
-      return `<li>
+      return `<li class="country-card-style">
       <div class="country-card-header" >
         <img src="${country.flags.svg}"
       alt="Flag of ${country.name.official}"

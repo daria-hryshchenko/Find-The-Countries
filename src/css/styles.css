@@ -1,51 +1,59 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+  background-color: #111;
+  /* color: #212121;
+  line-height: 1.5; */
 }
 
 #search-box {
   font: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 300px auto;
   font-size: 1.5em;
-  padding: 8px;
+  padding: 10px;
   max-width: 320px;
   margin-bottom: 16px;
-  border: solid 3px #3d64e6;
+  border: none;
   border-radius: 10px;
   transition: width 0.4s ease-in-out;
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
 }
 
 #search-box:focus {
   width: 100%;
-}
-
-.country-list {
-  list-style: none;
-  max-width: 320px;
-  margin: 40px auto;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgb(247, 247, 9);
 }
 
 .country-card-style {
-  padding: 0;
-  margin: 0;
+  list-style: none;
+  max-width: 320px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  /* align-items: center; */
-  gap: 10px;
-  font-size: 16px;
+  gap: 30px;
+  background-color: #0066cc;
+  padding: 50px;
+  border: none;
+  border-radius: 15px;
 }
 
 .country-card-header {
@@ -55,5 +63,14 @@ body {
   justify-content: start;
   align-items: center;
   gap: 10px;
-  color: #3d64e6;
+  color: #ffffff;
+}
+
+#particles-js {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #2a2929;
 }
