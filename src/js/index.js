@@ -16,6 +16,8 @@ const countryInfoEl = document.querySelector('.country-info');
 inputEl.addEventListener('input', debounce(function (event) {
   event.preventDefault();
   const searchQuery = event.target.value.trim();
+  countryListEl.innerHTML = '';
+  countryInfoEl.innerHTML = '';
   if (searchQuery !== "") {
     fetchCountry(searchQuery)
       .then(data => {
@@ -61,7 +63,6 @@ function oneCoutryCard(countries) {
     })
     .join('');
   countryListEl.innerHTML = countryCard;
-  countryList.innerHTML = '';
 }
 
 function countriesList(countries) {
@@ -78,5 +79,10 @@ function countriesList(countries) {
     })
     .join('');
   countryListEl.innerHTML = foundList;
-  countryList.innerHTML = '';
+
+}
+
+function cleanString() {
+  countryListEl.innerHTML = '';
+  countryInfoEl.innerHTML = '';
 }
