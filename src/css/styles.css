@@ -22,16 +22,20 @@ body {
   font-size: 1.5em;
   padding: 10px;
   max-width: 320px;
-  margin-bottom: 16px;
-  margin-right: 20px;
+  margin: 100px auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 16px;
+  margin-right: 20px; */
   border: none;
   border-radius: 10px;
   transition: width 0.4s ease-in-out;
   background: #fff;
-  position: absolute;
+  /* position: absolute;
   top: 10%;
   left: 10%;
-  transform: translate(-10%, -10%);
+  transform: translate(-10%, -10%); */
 }
 
 #search-box:focus {
